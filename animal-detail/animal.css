@@ -1,0 +1,15 @@
+.animal-details img {
+    width: 500px;
+    height: 600px;
+    background-color: beige;
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+}
+
+.animal-details {
+  flex-direction: column;
+  justify-content: center;
+}
