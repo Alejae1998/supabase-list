@@ -1,8 +1,16 @@
-// import functions and grab DOM elements
+// import { animals } from '../animal-detail/data.js';
+import { getAnimals } from './fetch.utils.js';
+import { renderListItem } from './utils.js';
 
-// let state
+// const main = document.getElementById('main');
+async function loadData() {
+    const animalDetails = document.getElementById('main');
+    const animals = await getAnimals();
+    // const main = document.querySelector('main');
+    for (let animal of animals) {
+        const animalDiv = renderListItem(animal);
+        animalDetails.append(animalDiv);
+    }
+}
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+loadData();

@@ -1,0 +1,18 @@
+#animal-details img {
+    width: 500px;
+    height: 600px;
+    background-color: beige;
+    display: flex;
+    max-width: 300px;
+    flex-direction: row;
+    justify-content: center;
+    border: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.animal-details {
+  flex-direction: column;
+  justify-content: center;
+}

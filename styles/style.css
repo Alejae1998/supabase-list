@@ -1,4 +1,3 @@
-
 body {
     /* feel free to update these css variables for a quick theme */
     
@@ -32,11 +31,12 @@ body {
 }
 
 main {
-    display: flex;
+    display: flow-root;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    text-indent: 50%;
 }
 
 section {
@@ -53,13 +53,17 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
+/* header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
+    letter-spacing: 2px;
+    justify-content: center;
+    /* background-color: beige; */
+    /* height: var(--header-height);
     box-shadow: var(--shadow);
-}
+    padding: 70px; */
+    
+    
+
 
 
 h2 {
@@ -72,13 +76,17 @@ h2 {
 }
 
 header img {
-    height: var(--header-height);
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: end;
 }
 
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -89,3 +97,4 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
